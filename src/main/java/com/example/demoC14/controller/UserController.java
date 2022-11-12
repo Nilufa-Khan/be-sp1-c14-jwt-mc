@@ -59,6 +59,7 @@ public class UserController {
         return new ResponseEntity(createUser, HttpStatus.CREATED);
     }
     @GetMapping("/userdata/v1/fetchusers")
+
     public ResponseEntity<?> getAllUsers()
     {
         List<User> userList = userService.getAllUser();
