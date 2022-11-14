@@ -72,4 +72,5 @@ public class UserController {
     public ResponseEntity<?> deleteData(@PathVariable int userId) throws UserNotFoundException{
         return new ResponseEntity<>(userService.deleteByUserId(userId), HttpStatus.OK);
     }
+
 }
