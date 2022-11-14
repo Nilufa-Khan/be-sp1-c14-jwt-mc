@@ -66,6 +66,7 @@ public class UserController {
         List<User> userList = userService.getAllUser();
         return  new ResponseEntity<>(userList,HttpStatus.OK);
     }
+
     @DeleteMapping("/userdata/v1/del/{userId}")
 
     public ResponseEntity<?> deleteData(@PathVariable int userId) throws UserNotFoundException{
