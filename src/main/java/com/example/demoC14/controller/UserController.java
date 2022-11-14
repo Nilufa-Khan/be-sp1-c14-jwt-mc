@@ -58,6 +58,7 @@ public class UserController {
         User createUser = userService.addUser(user);
         return new ResponseEntity(createUser, HttpStatus.CREATED);
     }
+
     @GetMapping("/userdata/v1/fetchusers")
 
     public ResponseEntity<?> getAllUsers()
